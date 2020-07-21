@@ -13,16 +13,16 @@ type TodoListState = {
 
 export class TodoList extends Component<{title: string}, TodoListState> {
     
-    let items = [
-                {id: 1, checked: false, text: "first item"},
-                {id: 2, checked: false, text: "second item"},
-                {id: 3, checked: false, text: "third item"}
+    // let items = [
+    //             {id: 1, checked: false, text: "first item"},
+    //             {id: 2, checked: false, text: "second item"},
+    //             {id: 3, checked: false, text: "third item"}
 
-                ][];
+    //             ];
 
-    for (const [index, value] of items()) {
-        items.push(<li key={index}>{value}</li>)
-        }
+    // for (const [index, value] of items()) {
+    //     items.push(<li key={index}>{value}</li>)
+    // }
 
     render() {
         return (
