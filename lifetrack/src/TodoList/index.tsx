@@ -2,33 +2,32 @@ import React, { Component } from 'react'; // let's also import Component
 import './todolist.css';
 
 
-export class TodoListProps
-{
-    text: string = "";
-}
+type TodoListProps {
+    text: string;
+};
 
-type TodoListState = {
-    count: number; // like this
-  };
+// type TodoListState = {
+//     text: string; // like this
+// };
 
-export class TodoList extends Component<{title: string}, TodoListState> {
+export class TodoList extends Component<TodoListProps, {}> {
+    constructor(props: TodoListProps){
+        super(props);
     
-    // let items = [
-    //             {id: 1, checked: false, text: "first item"},
-    //             {id: 2, checked: false, text: "second item"},
-    //             {id: 3, checked: false, text: "third item"}
-
-    //             ];
-
-    // for (const [index, value] of items()) {
-    //     items.push(<li key={index}>{value}</li>)
-    // }
+        this.state = {
+          text: "hai"
+        };
+    }
 
     render() {
         return (
-            <div className="TodoList">{this.props.title}</div>
+            <div className="TodoList">
+                <div className="TodoList-title">TITLE</div>
+                <div className="TodoList-item" text="first item"/>
+            </div>
         )
     }
 }
 
 export default TodoList;
+
