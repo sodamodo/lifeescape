@@ -17,8 +17,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react",
-    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
+    "jsx": "react"
   },
   "include": [
     "src"
