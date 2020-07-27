@@ -1,0 +1,21 @@
+.Counter {
+width: 30%;
+margin: 0 auto;
+border: 1px solid green;
+}
+
+#Counter-setup-title {
+    width: 10rem;
+    height: 30px;
+    min-height: 1.1rem;
+}
+
+.Counter-setup {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+}
+
+.Counter-setup-io {
+    
+}
